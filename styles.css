@@ -16,13 +16,22 @@ body {
   font-weight: 400;
   background-color: var(--body-bg-color);
   color: var(--text-color);
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 
 aside {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-weight: 400;
+  font-size: 14px
 }
 
 #root {
