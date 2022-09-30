@@ -25,13 +25,23 @@ aside {
   gap: 2rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  font-weight: 400;
-  font-size: 14px
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 #root {
@@ -108,4 +118,90 @@ footer {
 
 .card-content-list li + li {
   margin-top: 1.2rem;
+}
+
+.card-content-my-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content-my-projects p {
+  font-size: 14px;
+}
+
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card-content-project {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-content-project:hover, .card-content-post:hover {
+  box-shadow: 3px 3px 3px var(--bg-techs);
+}
+
+.card-content-project .title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-content-project .info-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.card-content-project .flex-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-content-project .stars-branchs {
+  gap: 1.5rem;
+}
+
+.card-content-post {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-content-post img {
+  width: 128px;
+  border-radius: 128px;
+}
+
+.card-content-post .post-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-title, .post-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.post-title p {
+  font-size: 12px;
+}
+
+.post-description {
+  font-size: 15px;
+}
+
+.post-description .hashtags {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 12px;
 }
